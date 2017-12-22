@@ -1,0 +1,66 @@
+.text{
+  font-family: 'Noto Sans CJK JP';
+  font-weight: bold;
+  fill:#3f4447;
+  opacity:0;
+  transition: 1s;
+  -webkit-filter: grayscale(1);
+   filter: grayscale(1);
+}
+/*animation for A */
+.animationA{
+  opacity: 0;
+  transition: 1s;
+}
+.GreenA {
+  animation: moveA 0.5s infinite alternate;
+}
+@keyframes moveA {
+  100% {
+    transform: translate(0px,8px);
+  }
+}
+/*animation for O */
+
+.GreenO {
+  opacity: 0;
+  transition: 0.5s;
+  animation: moveO 5.5s  alternate ;
+}
+.circle{
+  transition: 1s;
+filter: grayscale(80%);
+
+
+}
+.incircle{
+  transition: 1s;
+}
+@keyframes moveO {
+  5% {
+    transform: skew(10deg) ;
+  }
+  25% {
+    transform: translate(-470px,0px);
+  }
+  5.1% {
+    transform: skew(20deg);
+  }
+  10.1% {
+    transform: rotate(10deg);
+  }
+  10.1% {
+    transform: rotate(10deg);
+  }
+
+}
+@keyframes moveO2 {
+  50% {
+    r:26;
+  }
+}
+@keyframes moveO3 {
+  50% {
+    transform: translate(0px,2px);
+  }
+}

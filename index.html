@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Logo</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body class="">
+    <svg width="570" height="200" hidden>
+      <!--  all letters-->
+      <text class="text S" stroke="black" stroke-width="0.2" font-size="90" x="10" y="100" >S</text>
+      <text class="text T" stroke="black" stroke-width="0.2" font-size="90" x="65" y="100">T</text>
+      <text class="text R" stroke="black" stroke-width="0.2" font-size="90" x="190" y="100">R</text>
+      <text class="text T2" stroke="black" stroke-width="0.2" font-size="90" x="250" y="100">T</text>
+      <text class="text E" stroke="black" stroke-width="0.2" font-size="90" x="310" y="100">E</text>
+      <text class="text L" stroke="black" stroke-width="0.2" font-size="90" x="365" y="100">L</text>
+      <text class="text L2" stroke="black" stroke-width="0.2" font-size="90" x="420" y="100">L</text>
+      <!--  Main A gray-->
+      <path class="animationA" fill="none" stroke-width="11" stroke="#3f4447" stroke-linecap="butt" stroke-linejoin="butt" d="
+      M129,87
+      125,87
+      150,43
+      175,87
+      171,87
+      "/>
+      <!--  secned A green-->
+      <path class=" GreenA animationA" fill="none" stroke-width="10" stroke="#84c125" stroke-linecap="butt" stroke-linejoin="butt" d="
+      M141,97
+      125,97
+      150,53
+      175,97
+      160,97
+      "/>
+      <circle class="GreenO circle" cx="508" cy="67" r="28" stroke="#84c125"  stroke-width="10" fill="none"/>
+      <path class="GreenO incircle" fill="none" stroke="white" stroke-width="20" d="
+      M508,24
+      508,51
+      "/>
+      <path class="GreenO incircle" fill="none" stroke="#414141" stroke-width="12" d="
+      M509,28
+      509,50
+      "/>
+
+    </svg>
+<script type="text/javascript">
+Run();
+function Run() {
+	setTimeout(function() {
+		$('.GreenO').css('opacity', '1');
+	}, 0);
+	setTimeout(function() {
+		$('.text.S').css('opacity', '1');
+	}, 1700);
+	setTimeout(function() {
+		$('.text.T').css('opacity', '1');
+	}, 2000);
+	setTimeout(function() {
+		$('.animationA').css('opacity', '1');
+	}, 2200);
+	setTimeout(function() {
+		$('.text.R').css('opacity', '1');
+	}, 2500);
+	setTimeout(function() {
+		$('.text.T2').css('opacity', '1');
+	}, 2800);
+	setTimeout(function() {
+		$('.text.E').css('opacity', '1');
+	}, 3100);
+	setTimeout(function() {
+		$('.text.L').css('opacity', '1');
+	}, 3600);
+	setTimeout(function() {
+		$('.text.L2').css('opacity', '1');
+	}, 4300);
+	setTimeout(function() {
+		$('.circle').css('animation', 'moveO2 2s infinite alternate');
+    $('.incircle').css('animation', 'moveO3 2s infinite alternate');
+	}, 6000);
+}
+</script>
+  </body>
+</html>
