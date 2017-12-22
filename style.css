@@ -29,7 +29,7 @@
 }
 .circle{
   transition: 1s;
-filter: grayscale(80%);
+
 
 
 }
@@ -56,11 +56,14 @@ filter: grayscale(80%);
 }
 @keyframes moveO2 {
   50% {
-    r:26;
+    /*r:26;*/
+    /*filter: drop-shadow(5px 5px 10px black);*/
   }
 }
 @keyframes moveO3 {
   50% {
-    transform: translate(0px,2px);
+    /*transform: translate(0px,2px);*/
+    /*filter: drop-shadow(1px 1px 5px black);*/
+
   }
 }
