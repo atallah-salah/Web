@@ -8,7 +8,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body class="">
-    <svg width="570" height="200" hidden>
+    <svg width="550" height="120">
       <!--  all letters-->
       <text class="text S" stroke="black" stroke-width="0.2" font-size="90" x="10" y="100" >S</text>
       <text class="text T" stroke="black" stroke-width="0.2" font-size="90" x="65" y="100">T</text>
@@ -37,7 +37,20 @@
       <path class="GreenO incircle" fill="none" stroke="white" stroke-width="20" d="
       M508,24
       508,51
+
+
       "/>
+<!--
+      <path stroke="black" stroke-width="10" fill="none"  d="
+      M495,38 A31,30 -45 1,0 524 ,38
+       M497,38.1 492,38.1 M522,38.6 527,38.6
+
+      "/>
+
+      <path stroke="black" stroke-width="3" fill="black"  d="
+      M510,35
+      510,40
+      " /> -->
       <path class="GreenO incircle" fill="none" stroke="#414141" stroke-width="12" d="
       M509,28
       509,50
@@ -47,37 +60,40 @@
 <script type="text/javascript">
 Run();
 function Run() {
-	setTimeout(function() {
-		$('.GreenO').css('opacity', '1');
-	}, 0);
+	// setTimeout(function() {
+	// 	$('.GreenO').css('opacity', '1');
+	// }, 0);
 	setTimeout(function() {
 		$('.text.S').css('opacity', '1');
-	}, 1700);
+	}, 900);
 	setTimeout(function() {
 		$('.text.T').css('opacity', '1');
-	}, 2000);
+	}, 1200);
 	setTimeout(function() {
 		$('.animationA').css('opacity', '1');
-	}, 2200);
+	}, 1400);
 	setTimeout(function() {
 		$('.text.R').css('opacity', '1');
-	}, 2500);
+	}, 1700);
 	setTimeout(function() {
 		$('.text.T2').css('opacity', '1');
-	}, 2800);
+	}, 2000);
 	setTimeout(function() {
 		$('.text.E').css('opacity', '1');
-	}, 3100);
+	}, 2300);
 	setTimeout(function() {
 		$('.text.L').css('opacity', '1');
-	}, 3600);
+	}, 2900);
 	setTimeout(function() {
 		$('.text.L2').css('opacity', '1');
-	}, 4300);
+	}, 3600);
 	setTimeout(function() {
-		$('.circle').css('animation', 'moveO2 2s infinite alternate');
-    $('.incircle').css('animation', 'moveO3 2s infinite alternate');
-	}, 6000);
+		$('.circle').css('animation', 'moveO 3.5s infinite  alternate');
+  //   $('.incircle').css('animation', 'moveO3 0.5s  alternate');
+}, 4800);
+  setTimeout(function() {
+    $('.GreenA').css('animation', 'moveA 0.5s infinite alternate');
+  }, 4800);
 }
 </script>
   </body>

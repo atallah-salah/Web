@@ -4,16 +4,20 @@
   fill:#3f4447;
   opacity:0;
   transition: 1s;
-  -webkit-filter: grayscale(1);
-   filter: grayscale(1);
+  /*-webkit-filter: grayscale(1);*/
+   /*filter: grayscale(1);*/
+   animation: movetext 5s ;
 }
 /*animation for A */
 .animationA{
   opacity: 0;
   transition: 1s;
+  animation: movetext 5s ;
+
 }
 .GreenA {
-  animation: moveA 0.5s infinite alternate;
+  animation: movetext 5s ;
+  /*animation: moveA 0.5s infinite alternate;*/
 }
 @keyframes moveA {
   100% {
@@ -21,49 +25,41 @@
   }
 }
 /*animation for O */
-
 .GreenO {
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
   animation: moveO 5.5s  alternate ;
 }
 .circle{
-  transition: 1s;
-
-
-
+  transition: 0.5s;
+  animation: moveO2 0.5s  alternate;
 }
 .incircle{
-  transition: 1s;
+  transition: 0.5s;
+  animation: moveO3 0.5s  alternate;
 }
 @keyframes moveO {
-  5% {
-    transform: skew(10deg) ;
+  50% {
+    stroke:#DDFF05;
   }
-  25% {
-    transform: translate(-470px,0px);
-  }
-  5.1% {
-    transform: skew(20deg);
-  }
-  10.1% {
-    transform: rotate(10deg);
-  }
-  10.1% {
-    transform: rotate(10deg);
-  }
-
 }
+
 @keyframes moveO2 {
   50% {
-    /*r:26;*/
-    /*filter: drop-shadow(5px 5px 10px black);*/
+    r:25;
+    filter: drop-shadow(10px 10px 5px 5px black);
   }
 }
 @keyframes moveO3 {
   50% {
-    /*transform: translate(0px,2px);*/
+    transform: translate(0px,2px);
     /*filter: drop-shadow(1px 1px 5px black);*/
+  }
+}
 
+@keyframes movetext {
+  0% {
+    transform: translate(600px,0px);
+    /*filter: drop-shadow(1px 1px 5px black);*/
   }
 }
