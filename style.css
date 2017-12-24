@@ -17,7 +17,7 @@
 }
 .GreenA {
   /*animation: movetext 5s ;*/
-  animation: moveA 0.5s infinite alternate;
+  /*animation: moveA 0.5s infinite alternate;*/
 }
 @keyframes moveA {
   100% {
@@ -28,7 +28,7 @@
 .GreenO {
   opacity: 1;
   transition: 0.5s;
-  animation: moveO 1.5s  alternate ;
+  animation: moveO 2.5s  alternate ;
 }
 .circle{
   transition: 0.5s;
@@ -39,12 +39,14 @@
   animation: moveO3 0.5s  alternate;
 }
 @keyframes moveO {
-  100% {
-    transform-origin: 50% 50%;
- transform: rotate(90deg);
+  50% {
+    /*transform-origin: 50% 50%;*/
+    /*transform: rotate(15, 40, 40);*/
+    transform-origin: 0px 0px 0px;
+    /*transform: rotate(90deg);*/
+/*transform: matrix(-0.86602, 0.49999, -0.49999, -0.86602, 957.167, 575.015);*/
   }
 }
-
 @keyframes moveO2 {
   50% {
     r:25;
@@ -64,4 +66,7 @@
     transform: translate(600px,0px);
     /*filter: drop-shadow(1px 1px 5px black);*/
   }
+}
+svg.a{
+  display: none;
 }
