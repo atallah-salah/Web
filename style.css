@@ -1,3 +1,15 @@
+.path {
+  animation: draw 10s infinite;
+
+}
+
+ @keyframes draw {
+  70% {
+    stroke-dashoffset: 2;
+  }
+}
+
+
 .text{
   font-family: 'Noto Sans CJK JP';
   font-weight: bold;
@@ -26,9 +38,11 @@
 }
 /*animation for O */
 .GreenO {
-  opacity: 1;
+   /*animation: draw 10s infinite;*/
+  /*transform-origin: 50% 50% !important;*/
+  /*opacity: 1;*/
   transition: 0.5s;
-  animation: moveO 2.5s  alternate ;
+  animation: MoveO 2.5s infinite alternate ;
 }
 .circle{
   transition: 0.5s;
@@ -38,15 +52,12 @@
   transition: 0.5s;
   animation: moveO3 0.5s  alternate;
 }
-@keyframes moveO {
+@keyframes MoveO {
   50% {
-    /*transform-origin: 50% 50%;*/
-    /*transform: rotate(15, 40, 40);*/
-    transform-origin: 0px 0px 0px;
-    /*transform: rotate(90deg);*/
-/*transform: matrix(-0.86602, 0.49999, -0.49999, -0.86602, 957.167, 575.015);*/
+    stroke:lightgreen;
   }
 }
+
 @keyframes moveO2 {
   50% {
     r:25;
@@ -92,9 +103,9 @@ svg.a{
   stroke-width:3;
 }
 }
-
+/*
 @keyframes MoveO {
   from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 
-}
+}*/
