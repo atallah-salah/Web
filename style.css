@@ -70,3 +70,31 @@
 svg.a{
   display: none;
 }
+
+
+
+.GrayA{
+  animation: colorAF 1.4s  alternate;
+
+  /*animation: colorA 1s infinite alternate;*/
+
+}
+@keyframes colorA {
+100%{
+  stroke-width:2;
+}
+}
+@keyframes colorAF {
+  50%{
+    stroke-width:0;
+  }
+50%{
+  stroke-width:3;
+}
+}
+
+@keyframes MoveO {
+  from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+
+}
