@@ -16,8 +16,8 @@
 
 }
 .GreenA {
-  animation: movetext 5s ;
-  /*animation: moveA 0.5s infinite alternate;*/
+  /*animation: movetext 5s ;*/
+  animation: moveA 0.5s infinite alternate;
 }
 @keyframes moveA {
   100% {
@@ -28,7 +28,7 @@
 .GreenO {
   opacity: 1;
   transition: 0.5s;
-  animation: moveO 5.5s  alternate ;
+  animation: moveO 1.5s  alternate ;
 }
 .circle{
   transition: 0.5s;
@@ -39,14 +39,16 @@
   animation: moveO3 0.5s  alternate;
 }
 @keyframes moveO {
-  50% {
-    stroke:#DDFF05;
+  100% {
+    transform-origin: 50% 50%;
+ transform: rotate(90deg);
   }
 }
 
 @keyframes moveO2 {
   50% {
     r:25;
+    -moz-r:25;
     filter: drop-shadow(10px 10px 5px 5px black);
   }
 }
