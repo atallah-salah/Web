@@ -1,94 +1,15 @@
-.path {
-  animation: draw 10s infinite;
 
-}
-
- @keyframes draw {
-  70% {
-    stroke-dashoffset: 2;
-  }
-}
-
-
-.text{
-  font-family: 'Noto Sans CJK JP';
-  font-weight: bold;
-  fill:#3f4447;
-  opacity:0;
-  transition: 1s;
-  /*-webkit-filter: grayscale(1);*/
-   /*filter: grayscale(1);*/
-   animation: movetext 5s ;
-}
-/*animation for A */
-.animationA{
-  opacity: 0;
-  transition: 1s;
-  animation: movetext 5s ;
-
-}
-.GreenA {
-  /*animation: movetext 5s ;*/
-  /*animation: moveA 0.5s infinite alternate;*/
-}
-@keyframes moveA {
-  100% {
-    transform: translate(0px,8px);
-  }
-}
-/*animation for O */
 .GreenO {
-   /*animation: draw 10s infinite;*/
-  /*transform-origin: 50% 50% !important;*/
-  /*opacity: 1;*/
   transition: 0.5s;
   animation: MoveO 2.5s infinite alternate ;
-}
-.circle{
-  transition: 0.5s;
-  animation: moveO2 0.5s  alternate;
-}
-.incircle{
-  transition: 0.5s;
-  animation: moveO3 0.5s  alternate;
 }
 @keyframes MoveO {
   50% {
     stroke:lightgreen;
   }
 }
-
-@keyframes moveO2 {
-  50% {
-    r:25;
-    -moz-r:25;
-    filter: drop-shadow(10px 10px 5px 5px black);
-  }
-}
-@keyframes moveO3 {
-  50% {
-    transform: translate(0px,2px);
-    /*filter: drop-shadow(1px 1px 5px black);*/
-  }
-}
-
-@keyframes movetext {
-  0% {
-    transform: translate(600px,0px);
-    /*filter: drop-shadow(1px 1px 5px black);*/
-  }
-}
-svg.a{
-  display: none;
-}
-
-
-
 .GrayA{
   animation: colorAF 1.4s  alternate;
-
-  /*animation: colorA 1s infinite alternate;*/
-
 }
 @keyframes colorA {
 100%{
@@ -103,9 +24,3 @@ svg.a{
   stroke-width:3;
 }
 }
-/*
-@keyframes MoveO {
-  from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
-
-}*/
